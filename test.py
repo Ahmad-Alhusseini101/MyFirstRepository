@@ -14,5 +14,3 @@ if age.isalpha():
     print("Invalid input. Please enter a valid age.")
 elif round(float(age)) < 18:
     print("You are a minor.")
-else:
-    print("You are an adult.")
