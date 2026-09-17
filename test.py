@@ -1,8 +1,9 @@
-import time
-timer = input("Enter your time in seconds: ")
-for x in reversed(range(int(timer) + 1)):
-    seconds = int(x) % 60
-    minutes = (int(x) // 60) % 60
-    hours = (int(x) // 3600) 
-    print(f"{hours:02}:{minutes:02}:{seconds:02}")
-    time.sleep(1)
+Food = []
+while True:
+    item = input("Enter a food you'd like to buy (press q to quit): ")
+    if item.lower() == "q":
+        break
+    else: 
+        Food.append(item)
+        price = round(float(input(f"Enter the price if a/an {Food}: ")))
+print(f"Here's your whole shopping list: {Food}, and the total price is: {price}")
