@@ -1,7 +1,7 @@
 import string
 import random
 
-characters = string.ascii_letters + string.digits + string.punctuation 
+characters = " " + string.ascii_letters + string.digits + string.punctuation 
 characters_list = list(characters)
 keys = characters_list.copy()
 random.shuffle(keys)
@@ -19,6 +19,6 @@ for letter in user_input:
     print(keys[index], end="")
     index = 0
 print()
-print(characters_list)
+print(f"{characters_list}")
 print()
-print(keys)
+print(f"{keys}")
